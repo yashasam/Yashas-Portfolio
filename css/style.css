@@ -10784,11 +10784,10 @@ body.menu-show {
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  /* OVERRIDE: Force desktop behavior on small screens */
   body.menu-show {
-    position: fixed !important;
-    height: 100% !important;
-    width: 100% !important;
+    position: fixed;
+    height: 100%;
+    width: 100%;
   }
 }
 
