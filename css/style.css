@@ -12786,218 +12786,120 @@ textarea.form-control {
 }
 
 /* ==========================================
-   FORCE DESKTOP LAYOUT: Disable all responsive rules
-   Always render desktop layout across all screen sizes
+   TABLET: 481px to 768px breakpoint
    ========================================== */
 
-/* Override all mobile and tablet media queries */
-@media (max-width: 767.98px) {
-  /* Neutralize existing tablet rules - use desktop instead */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Heading adjustments for tablets */
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Adjust section padding */
+  .ftco-section {
+    padding: 4rem 0;
+  }
+
+  /* Tablet button sizing */
+  .btn {
+    padding: 0.85rem 1.75rem;
+  }
+
+  /* Contact icons tablet size */
+  .contact-section .box .icon {
+    width: 85px;
+    height: 85px;
+  }
+  .contact-section .box .icon span {
+    font-size: 28px;
+  }
+
+  /* Project card text on tablet */
+  .blog-entry .text .heading {
+    font-size: 19px;
+  }
+
+  /* Services icon sizing */
+  .services-1 .icon i {
+    font-size: 52px;
+  }
 }
+
+/* ==========================================
+   MOBILE-FIRST: 480px and below breakpoint
+   ========================================== */
 
 @media (max-width: 480px) {
-  /* Neutralize existing mobile rules - use desktop instead */
+  /* Typography scaling for mobile */
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Section padding for mobile */
+  .ftco-section {
+    padding: 3rem 0;
+  }
+
+  /* Navbar adjustments */
+  .ftco-navbar-light {
+    padding: 0.5rem 0;
+  }
+
+  /* Button sizing for touch */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* Contact icons on mobile */
+  .contact-section .box .icon span {
+    font-size: 24px;
+  }
+
+  /* Project cards - stack properly */
+  .blog-entry .text .heading {
+    font-size: 18px;
+  }
+
+  /* Form elements full width on mobile */
+  .form-control {
+    font-size: 16px;
+  }
+
+  /* Icon sizing for mobile */
+  .services-1 .icon i {
+    font-size: 45px;
+  }
+
+  /* Block-23 icons on mobile */
+  .block-23 ul li .icon {
+    width: 30px;
+    font-size: 16px;
+  }
+
+  /* Ensure images stay responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Container padding on very small screens */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
-@media (max-width: 375px) {
-  /* Neutralize existing small mobile rules - use desktop instead */
-}
-
-@media (max-width: 768px) {
-  /* Neutralize tablet overrides */
-}
-
-/* Ensure all elements maintain desktop sizing */
-* {
-  /* Prevent any mobile-specific scaling */
-  max-width: none !important;
-  overflow-x: auto;
-}
-
-/* Force body to desktop width minimum */
-body {
-  min-width: 1200px;
-  overflow-x: auto;
-}
-
-/* Container always at desktop width */
-.container {
-  width: 1140px !important;
-  max-width: 1140px !important;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
-
-.container-fluid {
-  width: 100%;
-  overflow-x: auto;
-}
-
-/* Navbar always desktop size */
-.ftco-navbar-light .container {
-  width: 1110px !important;
-  max-width: none !important;
-}
-
-.ftco-navbar-light {
-  padding: 1rem 0 !important;
-}
-
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-  padding: 0.5rem 1.25rem;
-}
-
-/* Images always responsive with aspect ratio */
-.block-20 {
-  aspect-ratio: 16 / 9 !important;
-  height: auto !important;
-}
-
-/* Contact icons keep desktop size */
-.contact-section .box .icon {
-  width: 100px !important;
-  height: 100px !important;
-}
-
-.contact-section .box .icon span {
-  font-size: 30px !important;
-}
-
-/* Services icons desktop sizing */
-.services-1 .icon i {
-  font-size: 60px !important;
-}
-
-/* Typography at desktop sizes */
-h1 {
-  font-size: 2.5rem !important;
-}
-
-h2 {
-  font-size: 2rem !important;
-}
-
-h3 {
-  font-size: 1.5rem !important;
-}
-
-/* Sections at desktop padding */
-.ftco-section {
-  padding: 7rem 0 !important;
-}
-
-/* Blog entries at desktop size */
-.blog-entry .text .heading {
-  font-size: 20px !important;
-}
-
-/* Buttons at desktop size */
-.btn {
-  padding: 0.75rem 2rem !important;
-}
-
-/* Forms at desktop size */
-.form-control {
-  font-size: 1rem !important;
-  height: auto !important;
-}
-
-/* Columns always show side-by-side (prevent stacking) */
-.col-md-1,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-lg-1,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12 {
-  width: auto !important;
-  flex: 1 1 auto !important;
-}
-
-.col-md-6 {
-  width: 50% !important;
-  flex-basis: 50% !important;
-}
-
-.col-md-4 {
-  width: 33.33333333% !important;
-  flex-basis: 33.33333333% !important;
-}
-
-.col-md-3 {
-  width: 25% !important;
-  flex-basis: 25% !important;
-}
-
-.col-lg-4 {
-  width: 33.33333333% !important;
-  flex-basis: 33.33333333% !important;
-}
-
-.col-lg-5 {
-  width: 41.66666667% !important;
-  flex-basis: 41.66666667% !important;
-}
-
-.col-lg-7 {
-  width: 58.33333333% !important;
-  flex-basis: 58.33333333% !important;
-}
-
-/* Navbar stays fixed at desktop */
-.ftco-navbar-light.scrolled {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin-top: -130px;
-  z-index: 999;
-}
-
-/* Body menu state */
-body.menu-show {
-  position: fixed !important;
-  height: 100% !important;
-  width: 100% !important;
-}
-
-/* Owl carousel at desktop */
-.owl-carousel {
-  width: 100%;
-}
-
-.owl-carousel .item {
-  min-height: auto;
-}
-
-.home-slider .slider-item {
-  min-height: 500px;
-}
-
-.home-slider .slider-item .slider-text h1 {
-  font-size: 3.5rem !important;
-}
-
-/* Ensure no column collapsing */
-.row {
-  flex-wrap: nowrap !important;
+@keyframes loader-dash {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
