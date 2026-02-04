@@ -10666,9 +10666,13 @@ body {
 }
 body.menu-show {
   overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
+}
+@media (max-width: 768px) {
+  body.menu-show {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 a {
@@ -10723,9 +10727,10 @@ h5,
   }
 }
 .ftco-navbar-light .container {
-  width: 1110px;
+  max-width: 1110px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 .ftco-navbar-light .navbar-brand {
   color: #fff;
@@ -10871,6 +10876,12 @@ h5,
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 0 15px;
+}
+@media (max-width: 768px) {
+  .ftco-navbar-light.scrolled {
+    position: relative;
+    margin-top: 0;
+  }
 }
 .ftco-navbar-light.scrolled .nav-item > .nav-link {
   color: #fff !important;
@@ -12146,7 +12157,14 @@ textarea.form-control {
   position: relative;
   display: block;
   width: 100%;
-  height: 180px;
+  aspect-ratio: 16 / 9;
+}
+/* Fallback for browsers without aspect-ratio support */
+@supports not (aspect-ratio: 16 / 9) {
+  .block-20 {
+    padding-bottom: 56.25%;
+    height: 0;
+  }
 }
 
 .blog-entry {
@@ -12282,6 +12300,18 @@ textarea.form-control {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+@media (max-width: 480px) {
+  .contact-section .box .icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-section .box .icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 .contact-section .box .icon span {
   color: #ffbd39;
@@ -12624,6 +12654,120 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
+  }
+}
+
+/* ==========================================
+   TABLET: 481px to 768px breakpoint
+   ========================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Heading adjustments for tablets */
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  /* Adjust section padding */
+  .ftco-section {
+    padding: 4rem 0;
+  }
+  
+  /* Tablet button sizing */
+  .btn {
+    padding: 0.85rem 1.75rem;
+  }
+  
+  /* Contact icons tablet size */
+  .contact-section .box .icon {
+    width: 85px;
+    height: 85px;
+  }
+  .contact-section .box .icon span {
+    font-size: 28px;
+  }
+  
+  /* Project card text on tablet */
+  .blog-entry .text .heading {
+    font-size: 19px;
+  }
+  
+  /* Services icon sizing */
+  .services-1 .icon i {
+    font-size: 52px;
+  }
+}
+
+/* ==========================================
+   MOBILE-FIRST: 480px and below breakpoint
+   ========================================== */
+
+@media (max-width: 480px) {
+  /* Typography scaling for mobile */
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Section padding for mobile */
+  .ftco-section {
+    padding: 3rem 0;
+  }
+  
+  /* Navbar adjustments */
+  .ftco-navbar-light {
+    padding: 0.5rem 0;
+  }
+  
+  /* Button sizing for touch */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Contact icons on mobile */
+  .contact-section .box .icon span {
+    font-size: 24px;
+  }
+  
+  /* Project cards - stack properly */
+  .blog-entry .text .heading {
+    font-size: 18px;
+  }
+  
+  /* Form elements full width on mobile */
+  .form-control {
+    font-size: 16px;
+  }
+  
+  /* Icon sizing for mobile */
+  .services-1 .icon i {
+    font-size: 45px;
+  }
+  
+  /* Block-23 icons on mobile */
+  .block-23 ul li .icon {
+    width: 30px;
+    font-size: 16px;
+  }
+  
+  /* Ensure images stay responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Container padding on very small screens */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
