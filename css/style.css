@@ -31,13 +31,11 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace:
-    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -69,10 +67,9 @@ section {
 
 body {
   margin: 0;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -202,9 +199,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family:
-    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
   font-size: 1em;
 }
 
@@ -2109,21 +2105,13 @@ pre code {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  -webkit-transition:
-    border-color 0.15s ease-in-out,
+  -webkit-transition: border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    border-color 0.15s ease-in-out,
+  transition: border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2359,8 +2347,7 @@ textarea.form-control.is-valid {
 .custom-select.is-valid {
   border-color: #28a745;
   padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
-  background:
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
       no-repeat right 0.75rem center/8px 10px,
     url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
       #fff no-repeat center right 1.75rem / calc(0.75em + 0.375rem)
@@ -2513,8 +2500,7 @@ textarea.form-control.is-invalid {
 .custom-select.is-invalid {
   border-color: #dc3545;
   padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
-  background:
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
       no-repeat right 0.75rem center/8px 10px,
     url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E")
       #fff no-repeat center right 1.75rem / calc(0.75em + 0.375rem)
@@ -2717,31 +2703,17 @@ textarea.form-control.is-invalid {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4109,33 +4081,18 @@ input[type="button"].btn-block {
   height: calc(1rem - 4px);
   background-color: #adb5bd;
   border-radius: 0.5rem;
-  -webkit-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-transform 0.15s ease-in-out,
+  -webkit-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-transform 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    transform 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    transform 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    transform 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    -webkit-transform 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-transform 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-transform 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-switch .custom-control-label::after {
@@ -4291,22 +4248,14 @@ input[type="button"].btn-block {
   outline: none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow:
-    0 0 0 1px #fff,
-    0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  box-shadow:
-    0 0 0 1px #fff,
-    0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow:
-    0 0 0 1px #fff,
-    0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow:
-    0 0 0 1px #fff,
-    0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .custom-range::-moz-focus-outer {
   border: 0;
@@ -4318,27 +4267,16 @@ input[type="button"].btn-block {
   background-color: #007bff;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -webkit-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -o-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -4367,27 +4305,16 @@ input[type="button"].btn-block {
   background-color: #007bff;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -webkit-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -o-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
 }
@@ -4419,27 +4346,16 @@ input[type="button"].btn-block {
   background-color: #007bff;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -webkit-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -o-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4489,27 +4405,16 @@ input[type="button"].btn-block {
 .custom-control-label::before,
 .custom-file-label,
 .custom-select {
-  -webkit-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -webkit-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -o-transition: background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-control-label::before,
@@ -5432,31 +5337,17 @@ input[type="button"].btn-block {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  -webkit-transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6293,9 +6184,7 @@ a.close.disabled {
   transition: -webkit-transform 0.3s ease-out;
   -o-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition:
-    transform 0.3s ease-out,
-    -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   -webkit-transform: translate(0, -50px);
   -ms-transform: translate(0, -50px);
   transform: translate(0, -50px);
@@ -6500,10 +6389,9 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6617,10 +6505,9 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6808,9 +6695,7 @@ a.close.disabled {
   transition: -webkit-transform 0.6s ease-in-out;
   -o-transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
-  transition:
-    transform 0.6s ease-in-out,
-    -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -10451,9 +10336,8 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family:
-    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace !important;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace !important;
 }
 
 .text-justify {
@@ -12695,15 +12579,9 @@ textarea.form-control {
   border-radius: 16px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition:
-    opacity 0.2s ease-out,
-    visibility 0s linear 0.2s;
-  -o-transition:
-    opacity 0.2s ease-out,
-    visibility 0s linear 0.2s;
-  transition:
-    opacity 0.2s ease-out,
-    visibility 0s linear 0.2s;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  -o-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
   z-index: 1000;
 }
 
@@ -12723,15 +12601,9 @@ textarea.form-control {
 }
 
 #ftco-loader.show {
-  -webkit-transition:
-    opacity 0.4s ease-out,
-    visibility 0s linear 0s;
-  -o-transition:
-    opacity 0.4s ease-out,
-    visibility 0s linear 0s;
-  transition:
-    opacity 0.4s ease-out,
-    visibility 0s linear 0s;
+  -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.4s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -12786,49 +12658,6 @@ textarea.form-control {
 }
 
 /* ==========================================
-   TABLET: 481px to 768px breakpoint
-   ========================================== */
-
-@media (min-width: 481px) and (max-width: 768px) {
-  /* Heading adjustments for tablets */
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  /* Adjust section padding */
-  .ftco-section {
-    padding: 4rem 0;
-  }
-
-  /* Tablet button sizing */
-  .btn {
-    padding: 0.85rem 1.75rem;
-  }
-
-  /* Contact icons tablet size */
-  .contact-section .box .icon {
-    width: 85px;
-    height: 85px;
-  }
-  .contact-section .box .icon span {
-    font-size: 28px;
-  }
-
-  /* Project card text on tablet */
-  .blog-entry .text .heading {
-    font-size: 19px;
-  }
-
-  /* Services icon sizing */
-  .services-1 .icon i {
-    font-size: 52px;
-  }
-}
-
-/* ==========================================
    MOBILE-FIRST: 480px and below breakpoint
    ========================================== */
 
@@ -12843,59 +12672,541 @@ textarea.form-control {
   h3 {
     font-size: 1.25rem;
   }
-
+  
   /* Section padding for mobile */
   .ftco-section {
     padding: 3rem 0;
   }
-
+  
   /* Navbar adjustments */
   .ftco-navbar-light {
     padding: 0.5rem 0;
   }
-
+  
   /* Button sizing for touch */
   .btn {
     padding: 0.75rem 1.5rem;
     font-size: 0.95rem;
   }
-
+  
   /* Contact icons on mobile */
   .contact-section .box .icon span {
     font-size: 24px;
   }
-
+  
   /* Project cards - stack properly */
   .blog-entry .text .heading {
     font-size: 18px;
+    
   }
-
+  
   /* Form elements full width on mobile */
   .form-control {
     font-size: 16px;
   }
-
+  
   /* Icon sizing for mobile */
   .services-1 .icon i {
     font-size: 45px;
   }
-
+  
   /* Block-23 icons on mobile */
   .block-23 ul li .icon {
     width: 30px;
     font-size: 16px;
   }
-
+  
   /* Ensure images stay responsive */
   img {
     max-width: 100%;
     height: auto;
   }
-
+  
   /* Container padding on very small screens */
   .container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  /* HERO SECTION MOBILE FIXES */
+  /* Fix: Hero slider height - reduce from 750px to responsive value on mobile */
+  .owl-carousel.home-slider {
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .owl-carousel.home-slider .slider-item {
+    height: auto;
+    min-height: 400px;
+    padding: 2rem 1rem;
+  }
+  
+  /* Fix: Hero section one-third element - responsive width on mobile */
+  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+    width: 100%;
+  }
+  
+  /* Fix: Hero section one-forth - stack properly on mobile */
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  /* Fix: Hero section heading - reduce font size for mobile screens */
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  
+  .owl-carousel.home-slider .slider-item .slider-text h2 {
+    font-size: 18px;
+  }
+  
+  .owl-carousel.home-slider .slider-item .slider-text p {
+    font-size: 14px;
+  }
+  
+  /* Fix: Hide navigation arrows on mobile - too small for touch */
+  .owl-carousel.home-slider .owl-nav {
+    display: none;
+  }
+  
+  /* Fix: Adjust nav positioning if shown */
+  .owl-carousel.home-slider .owl-nav .owl-prev,
+  .owl-carousel.home-slider .owl-nav .owl-next {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* TYPING ANIMATION MOBILE FIX */
+  /* Fix: Typing animation font-size - was 30px, scale down for mobile */
+  #typing-animation {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  /* PROJECT CARDS MOBILE FIX */
+  /* Fix: Project card height - reduce fixed 285px for mobile layout */
+  .project {
+    height: auto;
+    min-height: 250px;
+  }
+  
+  .project.img-2 {
+    height: auto;
+    min-height: 250px;
+  }
+  
+  .project .text {
+    max-width: 100%;
+    opacity: 1;
+    padding: 1.5rem;
+  }
+  
+  .project .overlay {
+    opacity: 0.3;
+  }
+
+  /* SERVICES CARDS MOBILE FIX */
+  /* Fix: Services card padding - reduce from 2em to fit mobile screens */
+  .services-1 {
+    padding: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-1 .icon {
+    margin-bottom: 20px;
+  }
+  
+  .services-1 .icon i {
+    font-size: 40px;
+  }
+
+  /* ABOUT SECTION MOBILE FIX */
+  /* Fix: About section padding - reduce from 4rem to fit mobile viewport */
+  .about-mf .box-shadow-full {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .about-mf .about-img {
+    margin-bottom: 1.5rem;
+  }
+
+  /* HEADING SECTION MOBILE FIX */
+  /* Fix: Large heading background text - reduce size and opacity for mobile */
+  .heading-section h1.big {
+    font-size: 5vw;
+  }
+  
+  .heading-section h2 {
+    font-size: 28px;
+  }
+
+  /* CONTACT SECTION MOBILE FIX */
+  /* Fix: Contact boxes - already has media query for 480px but ensure proper layout */
+  .contact-section .box {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section .box .icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-section .box .icon span {
+    font-size: 22px;
+  }
+  
+  .contact-section .box h3 {
+    font-size: 15px;
+  }
+
+  /* RESUME/EDUCATION SECTION MOBILE FIX */
+  /* Fix: Resume boxes - reduce padding and font for mobile */
+  .resume-wrap {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-wrap .date {
+    font-size: 20px;
+  }
+  
+  .resume-wrap h2 {
+    font-size: 20px;
+  }
+  
+  .resume-wrap .position {
+    font-size: 12px;
+  }
+
+  /* PROGRESS BARS MOBILE FIX */
+  /* Fix: Progress bar height - already 0.7rem is good, just ensure padding around */
+  .skill-mf .progress {
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  /* FOOTER MOBILE FIX */
+  /* Fix: Footer padding - reduce from 7em to fit mobile screens */
+  .ftco-footer {
+    padding: 3rem 0;
+  }
+  
+  .ftco-footer .ftco-footer-widget h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  /* HELPER CLASS MOBILE FIX */
+  /* Fix: Margin-top helper class - remove negative margin on mobile */
+  .margin-top {
+    margin-top: 0 !important;
+    padding-top: 2rem !important;
+  }
+
+  /* COUNTER SECTION MOBILE FIX */
+  /* Fix: Counter text - reduce font size for mobile */
+  .ftco-counter .text strong.number {
+    font-size: 24px;
+  }
+  
+  .ftco-counter .text span {
+    font-size: 14px;
+  }
+
+  /* MAP SECTION MOBILE FIX */
+  /* Fix: Map height - ensure proper aspect ratio on mobile */
+  #map {
+    height: 300px;
+  }
+
+  /* ENSURE NO HORIZONTAL SCROLLING */
+  /* Fix: Overflow hidden on body and html to prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   TABLET: 481px to 768px breakpoint
+   ========================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Heading adjustments for tablets */
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  /* Adjust section padding */
+  .ftco-section {
+    padding: 4rem 0;
+  }
+  
+  /* Tablet button sizing */
+  .btn {
+    padding: 0.85rem 1.75rem;
+  }
+  
+  /* Contact icons tablet size */
+  .contact-section .box .icon {
+    width: 85px;
+    height: 85px;
+  }
+  .contact-section .box .icon span {
+    font-size: 28px;
+  }
+  
+  /* Project card text on tablet */
+  .blog-entry .text .heading {
+    font-size: 19px;
+  }
+  
+  /* Services icon sizing */
+  .services-1 .icon i {
+    font-size: 52px;
+  }
+
+  /* HERO SECTION TABLET FIXES */
+  /* Fix: Reduce slider height for tablet viewports */
+  .owl-carousel.home-slider {
+    height: 500px;
+  }
+  
+  .owl-carousel.home-slider .slider-item {
+    height: 500px;
+  }
+  
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 36px;
+  }
+  
+  .owl-carousel.home-slider .slider-item .slider-text h2 {
+    font-size: 22px;
+  }
+
+  /* TYPING ANIMATION TABLET FIX */
+  /* Fix: Typing animation font-size - scale down for tablet */
+  #typing-animation {
+    font-size: 26px;
+  }
+
+  /* PROJECT CARDS TABLET FIX */
+  /* Fix: Project card height - adjust for tablet view */
+  .project {
+    height: auto;
+    min-height: 280px;
+  }
+  
+  .project.img-2 {
+    height: 400px;
+  }
+
+  /* HEADING SECTION TABLET FIX */
+  /* Adjust background heading size */
+  .heading-section h2 {
+    font-size: 42px;
+  }
+
+  /* SERVICES TABLET FIX */
+  /* Ensure proper padding on tablet */
+  .services-1 {
+    padding: 1.75rem;
+  }
+  
+  .services-1 .icon i {
+    font-size: 50px;
+  }
+
+  /* FOOTER TABLET FIX */
+  /* Adjust footer padding for tablet */
+  .ftco-footer {
+    padding: 5rem 0;
+  }
+  
+  .ftco-footer .ftco-footer-widget h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* CONTACT SECTION TABLET FIX */
+  .contact-section .box .icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .contact-section .box .icon span {
+    font-size: 26px;
+  }
+
+  /* RESUME TABLET FIX */
+  .resume-wrap {
+    padding: 25px;
+  }
+  
+  .resume-wrap .date {
+    font-size: 24px;
+  }
+  
+  .resume-wrap h2 {
+    font-size: 23px;
+  }
+
+  /* COUNTER SECTION TABLET FIX */
+  .ftco-counter .text strong.number {
+    font-size: 28px;
+  }
+
+  /* ENSURE NO HORIZONTAL SCROLLING */
+  /* Fix: Prevent horizontal scrolling on tablet */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   ADDITIONAL RESPONSIVE ENHANCEMENTS
+   For better mobile experience across all sections
+   ========================================== */
+
+/* GENERAL RESPONSIVE FIXES FOR PROPER GRID STACKING */
+@media (max-width: 767.98px) {
+  /* Ensure columns stack on tablets and below */
+  .col-md-6,
+  .col-md-4,
+  .col-lg-3,
+  .col-lg-5,
+  .col-lg-7 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ensure flex wrapping */
+  .row {
+    flex-wrap: wrap;
+  }
+  
+  /* Fix for slider text positioning on mobile/tablet */
+  .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  
+  /* Improve navbar on smaller devices */
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Remove aside horizontal stretch on mobile */
+  .aside-stretch:after {
+    content: none;
+  }
+}
+
+/* FIX FULL-HEIGHT ELEMENTS FOR MOBILE */
+@media (max-width: 767.98px) {
+  /* Adapt viewport height elements */
+  .ftco-vh-100 {
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 0;
+  }
+  
+  /* Hero section with full-height class */
+  .js-fullheight {
+    height: auto !important;
+    min-height: 400px;
+  }
+}
+
+/* EXTRA SMALL DEVICES (Under 360px) */
+@media (max-width: 360px) {
+  /* Scale down headings further for tiny screens */
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* Hero heading extra small */
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 24px;
+  }
+  
+  /* Typing animation for tiny screens */
+  #typing-animation {
+    font-size: 20px;
+  }
+  
+  /* Minimize container padding */
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  /* Smaller buttons */
+  .btn {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Services card padding */
+  .services-1 {
+    padding: 1.25rem;
+  }
+  
+  /* Progress bar adjustment */
+  .progress {
+    height: 8px;
+  }
+}
+
+/* LANDSCAPE MODE ADJUSTMENTS */
+@media (max-height: 500px) and (orientation: landscape) {
+  /* Reduce slider height in landscape mode */
+  .owl-carousel.home-slider {
+    height: 350px;
+  }
+  
+  .owl-carousel.home-slider .slider-item {
+    height: 350px;
+  }
+  
+  /* Reduce padding in landscape */
+  .ftco-section {
+    padding: 2rem 0;
   }
 }
 
