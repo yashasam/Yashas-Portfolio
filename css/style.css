@@ -11305,8 +11305,11 @@ h5,
   width: 100%;
   height: 100%;
   position: inherit;
+  /* FIX: Ensure background images cover entire hero container without distortion */
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
 }
 .hero-wrap .overlay {
   position: absolute;
@@ -11317,6 +11320,18 @@ h5,
   content: "";
   opacity: 0;
   background: #000000;
+  /* FIX: Ensure overlay maintains aspect ratio with background image */
+  width: 100%;
+  height: 100%;
+}
+
+/* FIX: Mobile-specific hero section background image optimization */
+@media (max-width: 480px) {
+  .hero-wrap {
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
 }
 
 .slider-text h1 {
@@ -11473,12 +11488,41 @@ h5,
   width: 100%;
   z-index: 0;
   position: relative;
+  /* FIX: Ensure background images in about section scale properly */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 .ftco-about .img-about .img {
   display: block;
   width: 100%;
   position: relative;
   z-index: 1;
+  /* FIX: Responsive background sizing for nested image containers */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* FIX: Tablet-specific adjustments for about section images */
+@media (max-width: 768px) {
+  .ftco-about .img-about {
+    min-height: 400px;
+  }
+}
+
+/* FIX: Mobile-specific adjustments for about section images */
+@media (max-width: 480px) {
+  .ftco-about .img-about {
+    /* FIX: Reduce container height on mobile for better viewport usage */
+    min-height: 300px;
+  }
+  .ftco-about .img-about .img {
+    /* FIX: Ensure responsive background image scaling on mobile */
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .ftco-about ul.about-info {
@@ -11681,17 +11725,59 @@ h5,
 
 .project {
   width: 100%;
-  height: 285px;
+  /* FIX: Replace fixed 285px height with aspect-ratio for responsive scaling */
+  aspect-ratio: 16 / 9;
+  min-height: 250px;
   margin-bottom: 30px;
   position: relative;
   z-index: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .project.img-2 {
-  height: 600px;
+  /* FIX: Desktop img-2 projects maintain aspect-ratio while mobile adapts */
+  aspect-ratio: 16 / 9;
+  min-height: 400px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
+  /* FIX: Tablet - projects scale proportionally with aspect-ratio */
+  .project {
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+  }
   .project.img-2 {
-    height: 285px;
+    /* FIX: Mobile tablets - maintain aspect ratio while reducing height */
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* FIX: Mobile phones - optimize height for limited viewport space */
+  .project {
+    aspect-ratio: 16 / 9;
+    min-height: 150px;
+  }
+  .project.img-2 {
+    /* FIX: Mobile - ensure readable text overlay at reduced height */
+    aspect-ratio: 16 / 9;
+    min-height: 150px;
+  }
+}
+
+/* Fallback for browsers without aspect-ratio support */
+@supports not (aspect-ratio: 16 / 9) {
+  .project {
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .project.img-2 {
+    padding-bottom: 56.25%;
+    height: 0;
   }
 }
 .project.img-2 .text {
@@ -12063,6 +12149,16 @@ textarea.form-control {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  /* FIX: Responsive image containers - prevent overflow on mobile */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* FIX: Responsive img elements - ensure images fit containers without distortion */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .image-popup {
@@ -12157,6 +12253,7 @@ textarea.form-control {
   position: relative;
   display: block;
   width: 100%;
+  /* FIX: Aspect-ratio maintains 16:9 proportions without distortion on all screen sizes */
   aspect-ratio: 16 / 9;
 }
 /* Fallback for browsers without aspect-ratio support */
@@ -12164,6 +12261,15 @@ textarea.form-control {
   .block-20 {
     padding-bottom: 56.25%;
     height: 0;
+    overflow: hidden;
+  }
+}
+
+/* FIX: Ensure responsive scaling on mobile and tablet viewports */
+@media (max-width: 768px) {
+  .block-20 {
+    aspect-ratio: 16 / 9;
+    width: 100%;
   }
 }
 
@@ -12329,11 +12435,44 @@ textarea.form-control {
 
 .contact-section .img {
   width: 100%;
-  background-position: top center;
+  /* FIX: Use center positioning for better mobile image framing */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* FIX: Replace fixed 500px height with aspect-ratio for responsive scaling */
+  aspect-ratio: 16 / 9;
+  min-height: 300px;
 }
 @media (max-width: 991.98px) {
   .contact-section .img {
-    height: 500px;
+    /* FIX: Tablet - maintain aspect ratio with min-height fallback */
+    aspect-ratio: 16 / 9;
+    min-height: 350px;
+  }
+}
+
+/* FIX: Mobile tablet-specific contact image sizing */
+@media (max-width: 768px) {
+  .contact-section .img {
+    aspect-ratio: 16 / 9;
+    min-height: 250px;
+  }
+}
+
+/* FIX: Mobile phone-specific contact image sizing */
+@media (max-width: 480px) {
+  .contact-section .img {
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+  }
+}
+
+/* Fallback for browsers without aspect-ratio support */
+@supports not (aspect-ratio: 16 / 9) {
+  .contact-section .img {
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
   }
 }
 
@@ -12360,12 +12499,29 @@ textarea.form-control {
 
 .block-21 .blog-img {
   display: block;
-  height: 80px;
+  /* FIX: Use aspect-ratio for perfect circular images without distortion */
   width: 80px;
+  height: 80px;
+  aspect-ratio: 1 / 1;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  /* FIX: Ensure background images fill circular containers proportionally */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/* FIX: Mobile-specific circular image sizing */
+@media (max-width: 480px) {
+  .block-21 .blog-img {
+    /* FIX: Scale down circular images on mobile to fit viewport */
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .block-21 .text {
@@ -12658,6 +12814,102 @@ textarea.form-control {
 }
 
 /* ==========================================
+   RESPONSIVE IMAGE OPTIMIZATION
+   For all background-image and img elements
+   ========================================== */
+
+/* FIX: Slider carousel images responsive scaling */
+@media (max-width: 768px) {
+  .owl-carousel.home-slider {
+    /* FIX: Ensure carousel background image adapts on tablet */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 480px) {
+  .owl-carousel.home-slider {
+    /* FIX: Carousel image centered and scaled for mobile phones */
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/* FIX: Ensure all background-position-based images are responsive */
+@media (max-width: 768px) {
+  [style*="background-image"] {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+/* FIX: Image elements in various containers */
+.ftco-section img,
+.container img,
+.row img,
+.col-md-6 img,
+.col-md-4 img,
+.col-lg-5 img,
+.col-lg-7 img {
+  /* FIX: All images responsive and scalable */
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* IE8 hack */
+  display: block;
+}
+
+/* FIX: Magnific-popup image containers responsive */
+.mfp-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FIX: Blog entry images maintain aspect ratio */
+.blog-entry a.block-20,
+.project {
+  background-attachment: scroll;
+}
+
+/* FIX: Zoom effect images responsive */
+.zoom-effect {
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+/* FIX: Ensure responsive images don't break on print */
+@media print {
+  img {
+    max-width: 100%;
+  }
+}
+
+/* FIX: Tablet landscape images responsive */
+@media (max-width: 768px) and (orientation: landscape) {
+  .block-20,
+  .project,
+  .contact-section .img {
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+  }
+}
+
+/* FIX: Ensure picture elements are responsive */
+picture {
+  display: block;
+  width: 100%;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================
    MOBILE-FIRST: 480px and below breakpoint
    ========================================== */
 
@@ -12697,7 +12949,7 @@ textarea.form-control {
   /* Project cards - stack properly */
   .blog-entry .text .heading {
     font-size: 18px;
-    
+
   }
   
   /* Form elements full width on mobile */
